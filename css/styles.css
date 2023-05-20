@@ -830,6 +830,13 @@ p {
   border-color: var(--background-color-checkbox);
 }
 
+.modal-form-check:focus + .modal-label-check .modal-fake-checkbox {
+  background-color: var(--background-color-checkbox);
+  border: none;
+  fill: var(--title-media-color);
+  border-color: var(--background-color-checkbox);
+}
+
 .modal-form-check:focus + .modal-fake-checkbox {
   background: #404bbf;
   border: 1px solid #404bbf;
@@ -837,6 +844,10 @@ p {
 
 .privacy-policy-link {
   color: var(--privacy-link-color);
+}
+
+.modal-icon {
+  cursor: pointer;
 }
 
 /* =====/MODAL FORM===== */
