@@ -831,9 +831,6 @@ p {
 }
 
 .modal-form-check:focus + .modal-label-check .modal-fake-checkbox {
-  background-color: var(--background-color-checkbox);
-  border: none;
-  fill: var(--title-media-color);
   border-color: var(--background-color-checkbox);
 }
 
