@@ -819,6 +819,7 @@ p {
   margin-right: 8px;
   width: 16px;
   height: 16px;
+  border: 1px solid #2e2f42;
   border: 1px solid #a9aab1;
   border-radius: 2px;
   fill: transparent;
