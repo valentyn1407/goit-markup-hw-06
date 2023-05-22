@@ -530,7 +530,6 @@ p {
 }
 
 .footer {
-  max-width: 1440px;
   margin: auto;
   padding: 100px 0;
   background: #2e2f42;
@@ -819,7 +818,7 @@ p {
   margin-right: 8px;
   width: 16px;
   height: 16px;
-  border: 1px solid #2e2f42;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   fill: transparent;
 }
