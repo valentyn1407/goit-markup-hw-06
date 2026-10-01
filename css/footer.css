@@ -98,6 +98,12 @@
   gap: 16px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .footer-social-list {
+    justify-content: flex-start;
+  }
+}
+
 .footer-socials-link {
 }
 

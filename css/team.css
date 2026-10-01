@@ -25,6 +25,7 @@
 }
 
 .team-item {
+  width: 264px;
   border-radius: 0 0 4px 4px;
   background-color: var(--white);
 
@@ -32,12 +33,6 @@
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-@media only screen and (min-width: 768px) {
-  .team-item {
-    width: 264px;
-  }
 }
 
 @media only screen and (min-width: 1158px) {
