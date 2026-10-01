@@ -9,12 +9,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    row-gap: 48px;
+    row-gap: 72px;
   }
 }
 
 @media only screen and (min-width: 1158px) {
   .portfolio-list {
+    row-gap: 48px;
   }
 }
 

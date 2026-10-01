@@ -19,13 +19,8 @@
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: center;
     gap: 64px 24px;
-  }
-}
-
-@media only screen and (min-width: 1158px) {
-  .team-list {
   }
 }
 
@@ -41,7 +36,7 @@
 
 @media only screen and (min-width: 768px) {
   .team-item {
-    width: calc((100% - 24px) / 2);
+    width: 264px;
   }
 }
 

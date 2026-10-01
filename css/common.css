@@ -65,12 +65,19 @@ address {
 /* Base Styles */
 
 .logo {
+  padding: 16px 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  .header .logo {
+    padding: 24px 0;
+  }
 }
 
 .accent {

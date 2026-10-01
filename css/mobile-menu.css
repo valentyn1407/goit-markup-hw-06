@@ -22,24 +22,6 @@
   padding: 72px 16px 40px;
 }
 
-.mobile-menu-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  padding: 0;
-  border: none;
-
-  color: var(--navy-blue);
-  background-color: transparent;
-}
-
-@media only screen and (min-width: 768px) {
-  .header .mobile-menu-btn {
-    display: none;
-  }
-}
-
 .mobile-menu-list {
   display: flex;
   flex-direction: column;

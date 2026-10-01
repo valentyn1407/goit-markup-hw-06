@@ -1,17 +1,28 @@
 .header {
-  padding: 16px 0;
   border-bottom: 1px solid var(--cornflower);
-}
-
-@media only screen and (min-width: 768px) {
-  .header {
-    padding: 24px 0;
-  }
 }
 
 .header .container {
   display: flex;
   align-items: center;
+}
+
+.mobile-menu-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+
+  color: var(--navy-blue);
+  background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-btn {
+    display: none;
+  }
 }
 
 .nav {

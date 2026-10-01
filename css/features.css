@@ -9,17 +9,23 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    gap: 72px 24px;
   }
 }
 
 .features-item {
-  width: 264px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157.98px) {
   .features-item {
     width: 356px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .features-item {
+    width: 264px;
   }
 }
 
@@ -47,7 +53,7 @@
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.11;
   text-align: center;
 }
 
@@ -71,7 +77,7 @@
   color: var(--slate);
 }
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 1158px) {
   .features-desc {
     font-weight: 400;
   }
