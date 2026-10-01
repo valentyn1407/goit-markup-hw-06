@@ -1,5 +1,12 @@
 .header {
+  padding: 16px 0;
   border-bottom: 1px solid var(--cornflower);
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 24px 0;
+  }
 }
 
 .header .container {
@@ -11,10 +18,24 @@
   margin-left: 76px;
   margin-right: auto;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    margin-left: 120px;
+  }
+}
+
 .nav-list {
   display: flex;
   gap: 40px;
 }
+
 .nav-item {
   position: relative;
 }
@@ -52,12 +73,28 @@
 .contacts {
   display: flex;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .contacts {
+    display: none;
+  }
+}
+
 .contacts-list {
   display: flex;
   gap: 40px;
 }
+
+@media only screen and (max-width: 1158px) {
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 .contacts-item {
 }
+
 .contacts-link {
   font-weight: 400;
   font-size: 16px;
@@ -66,6 +103,14 @@
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
+}
+
+@media only screen and (max-width: 1158px) {
+  .contacts-link {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
 }
 
 .contacts-link:hover,

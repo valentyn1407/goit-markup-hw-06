@@ -1,29 +1,39 @@
-const backdrop = document.querySelector(".backdrop");
-const openModalWindow = document.querySelector(".hero-btn");
-const closeModalWindow = document.querySelector(".modal-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+const mobileMenuOpenBtn = document.querySelector(".mobile-menu-btn");
+const mobileMenuCloseBtn = document.querySelector(".mobile-menu-close-btn");
 
-// Open Modal Window 
+const backdrop = document.querySelector(".backdrop");
+const openModalWindow = document.querySelector(".open-btn");
+const closeModalWindow = document.querySelector(".close-btn");
+
+// Mobile menu
+mobileMenuOpenBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("is-open");
+});
+
+mobileMenuCloseBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("is-open");
+});
+
+// Modal
 openModalWindow.addEventListener("click", () => {
   backdrop.classList.add("is-open");
 });
 
-// Close modal window 
 closeModalWindow.addEventListener("click", () => {
   backdrop.classList.remove("is-open");
 });
 
-// Close modal window click on the Backdrop
-backdrop.addEventListener('click', (e) => {
-    if (e.target === backdrop) {
-        backdrop.classList.remove('is-open');
-        document.body.style.overflow = '';
-    }
+// Close modal by clicking backdrop
+backdrop.addEventListener("click", e => {
+  if (e.target === backdrop) {
+    backdrop.classList.remove("is-open");
+  }
 });
 
-// Close modal window on the Esc button 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && backdrop.classList.contains('is-open')) {
-        backdrop.classList.remove('is-open');
-        document.bode.style.overflow = '';
-    }
+// Close modal by Escape
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && backdrop.classList.contains("is-open")) {
+    backdrop.classList.remove("is-open");
+  }
 });

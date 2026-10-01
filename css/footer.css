@@ -1,15 +1,45 @@
 .footer {
-  padding: 100px 0px;
+  padding: 96px 0px;
 
   background-color: var(--navy-blue);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .footer-container {
+    padding: 0 108px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0px;
+  }
+}
+
 .footer-container {
   display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-container {
+    gap: 0;
+  }
 }
 
 .footer-socials {
-  margin-left: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 72px;
 }
 
 .footer-slogan {
@@ -22,15 +52,46 @@
 }
 
 .footer-caption {
+  text-align: center;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.5;
   color: var(--white);
 }
 
+@media only screen and (min-width: 768px) {
+  .footer-caption {
+    text-align: start;
+  }
+}
+
+.footer-content {
+  margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-content,
+  .footer-socials {
+    margin: 0;
+  }
+}
+
 .logo-footer {
   display: block;
+  text-align: center;
   margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo-footer {
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-socials {
+    margin-left: 120px;
+  }
 }
 
 .footer-social-list {
@@ -48,16 +109,39 @@
 /* Footer Form */
 
 .footer-subscribe {
-  margin-left: 83px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+@media only screen and (min-width: 1158px) {
+  .footer-subscribe {
+    margin-left: 83px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-subscribe {
+  }
 }
 
 .subscribe-form {
   display: flex;
-  gap: 24px;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 .subscribe-input {
-  width: 264px;
+  width: 288px;
   height: 40px;
   padding: 8px 16px;
 
@@ -77,6 +161,12 @@
   transition-property: border-color;
 }
 
+@media only screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 264px;
+  }
+}
+
 .subscribe-input:focus {
   border-color: var(--green);
 }
@@ -94,7 +184,7 @@
   justify-content: center;
   gap: 16px;
 
-  min-width: 165px;
+  max-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border-radius: 4px;
