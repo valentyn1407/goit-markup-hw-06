@@ -67,12 +67,17 @@
   color: var(--iris);
 }
 
+.mobile-menu .contacts-item:last-child > .contacts-link {
+  color: var(--slate);
+}
+
 .mobile-menu .contacts-link {
   font-size: 20px;
   line-height: 1.2;
 }
 
 .mobile-menu .footer-social-list {
+  justify-content: flex-start;
   gap: 40px;
 }
 
